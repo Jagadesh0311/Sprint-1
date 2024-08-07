@@ -1,0 +1,71 @@
+package Solution.java;
+
+public class UnderWriter {
+    private  static  int count =0;
+    private int id ;
+    private String name;
+    private String dob;
+    private String joiningDate;
+    private String defaultPass;
+
+    UnderWriter(String name ,String dob,String joiningDate,String defaultPass){
+        this.id=++count;
+        this.name=name;
+        this.dob = dob;
+        this.joiningDate=joiningDate;
+        this.defaultPass=defaultPass;
+
+    }
+
+    public int getId(){
+        return id;
+    }
+    public String getName(){
+        return name;
+    }
+    public String getDob(){
+        return dob;
+    }
+    public static int getCount() {
+        return count;
+    }
+
+    public static void setCount(int count) {
+        UnderWriter.count = count;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
+
+    public void setJoiningDate(String joiningDate) {
+        this.joiningDate = joiningDate;
+    }
+
+    public void setDefaultPass(String defaultPass) {
+        this.defaultPass = defaultPass;
+    }
+
+    public String getJoiningDate(){
+        return joiningDate;
+    }
+    public String getDefaultPass(){
+        return defaultPass;
+    }
+    public void setPass(String pass){
+        this.defaultPass = pass;
+    }
+
+
+}
+
+
+
